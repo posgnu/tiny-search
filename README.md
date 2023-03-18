@@ -2,13 +2,16 @@
 This repository implements a simple search engine that works with UCI ICS domain webpages.
 
 ## Documents data
+The provided dataset, developer.zip, contains data that was gathered by web crawlers from 88 domains associated with ICS. The dataset consists of a little under 56,000 web pages, which are stored in folders with one folder per domain. Each file inside a folder corresponds to one web page, and the files are stored in JSON format with two fields: "url" and "content."
 
+The "url" field contains the URL of the web page, and the "content" field contains the content of the page as found during crawling. It is important to note that some of the pages in the dataset may not contain any HTML at all, and when they do, it may not be well-formed. For example, there might be an open <strong> tag but the associated closing </strong> tag might be missing. Therefore, it is important to select a parser library that can handle broken HTML when working with this dataset.
 ## How to run
 ### Step 0
 Setup python environment.
 ```sh
 pip install -r requirements.txt
 ```
+Prepare the dataset. Download [developer.zip](https://www.dropbox.com/s/vcfy7ad3osqyx23/developer.zip?dl=0) and unzip it under pageset directory.
 
 ### Step 1 
 Build the inverted index and calculate the tf-idf score matrix. The below command will generate `inverted_index.pkl` and `tfvectorizer.pkl`. If `tfvectorizer.pkl` already exists then the script loads the existing tf-idf matrix and use it to build the inverted index. 
