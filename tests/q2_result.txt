@@ -1,0 +1,10 @@
+0: https://www.ics.uci.edu/~ejw/authoring/munich/issues/sld005.htm
+1: https://www.ics.uci.edu/~ejw/authoring/www6/sld030.htm
+2: https://www.ics.uci.edu/~vitus/ics1c/index.html
+3: https://www.ics.uci.edu/~ejw/authoring/redmond/vers_requirements/sld014.htm
+4: https://www.ics.uci.edu/~ejw/authoring/www6/tsld030.htm
+5: https://www.ics.uci.edu/~ejw/authoring/munich/issues/sld006.htm
+6: https://www.ics.uci.edu/~ics1c/
+7: https://www.ics.uci.edu/~irus/wisen/wisen98/presentations/Segall/sld015.htm
+8: https://www.ics.uci.edu/~ejw/authoring/redmond/vers_requirements/tsld014.htm
+9: https://www.ics.uci.edu/~kobsa/privacy/Russian%20Federation.htm#article13_1

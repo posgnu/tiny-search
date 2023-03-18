@@ -1,0 +1,6 @@
+__pycache__
+pageset/*
+index/*
+tfidfmatrix.pkl
+db.sqlite3
+.DS_Store

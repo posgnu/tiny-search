@@ -1,0 +1,49 @@
+<html>
+<head>
+    <title>Tiny Search</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <style>
+        #main{
+        position: absolute;
+        top: 35%;
+        left: 15%;
+        }
+    </style>
+</head>
+
+<body>
+<div class="container">
+<div id="main">
+    
+    <br/>
+    <form action="{% url 'search' %}" class="form-inline" method="get">
+        <img src="https://brand.uci.edu/master-branding/primary-logos/_img/UCI_primarylogo_webblue.png" alt="logo" height="120" id="logo">
+        <p style="width:50px;"></p>
+        <div class="form-group mb-8">
+            <h1>{% if type %}{{ type.name }}{% else %}Tiny Search{% endif %}</h1>
+       </div>
+       <div class="form-group mx-sm-3 mb-2">
+        <label for="" class="sr-only">search</label>
+        <input name="search" type="" class="form-control" id="" placeholder="Keyword" size="50">
+        </div>
+        
+        <button type="submit" class="btn btn-success mb-2" style="background-color: #008CBA">Search</button>
+   </form>
+        <br/>
+    
+    
+    <!--
+        {% for x in urls %}
+    <p> {{ x }} </p>
+    <h3> <a href="{{ x.get_url }}">{{x.book_name}}</a></h3>
+    <p class="lead">by {{x.author_name}}</p>
+      <p class="lead">${{x.price}}</p>
+     <hr>
+     {% endfor %}
+    -->
+    
+</div>
+</div>
+</body>
+</html>

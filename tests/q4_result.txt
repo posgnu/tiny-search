@@ -1,0 +1,10 @@
+0: https://www.cs.uci.edu/symmetry-neural-networks-for-neutrinos-pierre-baldi-quoted/
+1: https://www.ics.uci.edu/community/news/spotlight/spotlight_baldi.php
+2: https://cml.ics.uci.edu/category/news/page/8/
+3: https://cml.ics.uci.edu/books/
+4: https://www.ics.uci.edu/~pjsadows/research.html
+5: https://cml.ics.uci.edu/tag/news/page/6/?page=events&subPage=aiml
+6: https://www.cs.uci.edu/multidepartmental-collaboration-on-detecting-code-clones-leads-to-distinguished-paper-award/#more-1849
+7: https://www.cs.uci.edu/mit-technology-review-a-machine-has-figured-out-rubiks-cube-all-by-itself-phd-researcher-stephen-mcaleer-quoted/
+8: https://www.ics.uci.edu/~theory/269/190524b.html
+9: https://www.ics.uci.edu/~eppstein/pix/clouds/AnaheimHills.html

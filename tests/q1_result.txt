@@ -1,0 +1,10 @@
+0: https://cml.ics.uci.edu/2015/02/alexander-ihler-gives-short-course-on-approximate-inference-at-mlss/
+1: https://cbcl.ics.uci.edu/doku.php/start?rev=1396650952
+2: https://cbcl.ics.uci.edu/doku.php/start?rev=1396651030
+3: https://cbcl.ics.uci.edu/doku.php/start?rev=1396650498
+4: https://cml.ics.uci.edu/2018/08/two-new-nsf-awards-in-machine-learning-for-sameer-singh/
+5: http://sli.ics.uci.edu/Classes/Classes
+6: https://cml.ics.uci.edu/category/news/page/9/
+7: http://sli.ics.uci.edu/pmwiki/pmwiki.php?n=Main%2FHomePage
+8: https://www.ics.uci.edu/~pazzani/Research.html
+9: https://cml.ics.uci.edu/

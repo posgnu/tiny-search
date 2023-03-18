@@ -1,0 +1,36 @@
+<html>
+<head>
+   <title>Search Result</title>
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+<body>
+<br/></br/>
+<div class="container">
+   <form action="{% url 'main' %}" class="form-inline" method="get">
+      <button type="submit" class="btn btn-primary mb-2" style="background-color: #008CBA">Back</button>
+   </form>
+   <div class="col-md-8 offset-md-2">
+{% if query %}
+   <h2>
+   Found {{ len }} result{{ len|pluralize }}
+   </h2>
+   <hr>
+   {% for url in page_obj %}
+      <a href="{{ url.0 }}"><h5>{{url.0}}</h5></a> <p>score: {{ url.1 }}</p>
+      <a href="{% url 'detail' %}?url={{ url.0 }}"> <h6>Cached content</h6></a>
+      <hr>
+   {% empty %}
+      <h3>No results found.</h3>
+   {% endfor %}
+
+   {% include "pagination.html" %}
+   <br>
+   <br>
+      
+{% endif %}
+</div>
+</div>
+</body>
+
+<html>
