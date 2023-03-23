@@ -46,8 +46,6 @@ Tiny search used simhash to remove duplicate pages in the dataset.
 
 [paper](https://static.googleusercontent.com/media/research.google.com/en//pubs/archive/33026.pdf)
 
-### PageRank
-
 ### Inverted index
 
 token | (document_id, location_list, tf-idf_score, important_mutiplier)
@@ -127,7 +125,3 @@ skip some urls
 5. important words in query should be weighted more
 tf-idf
 
-
-## TODO
-* use loc
-* tf-idf score check

@@ -154,7 +154,6 @@ if __name__ == "__main__":
         
         for (token, posting_list) in tqdm.tqdm(inverted_index.items()):
             token_shard_num = get_token_shard_num(skip_tokens, token)
-            # FIXME: this should be list concat
             token_shards[token_shard_num][token] += posting_list
             
     for token_shard_num in tqdm.trange(len(skip_tokens)):

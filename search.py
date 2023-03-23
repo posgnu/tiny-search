@@ -33,10 +33,19 @@ def calculate_final_score(tfidf_score, important_multiplier):
     score = tfidf_score * important_multiplier
     return score
 
+def check_loc(loc_set, loc):
+    for loc_list in loc_set:
+        if loc_list.intersection(loc):
+            return True, 1
+    else:
+        return False, 1
+
 def ranking(tokenized_query):
     posting_list = []
     max_posting_num = 500
     url_set_list = []
+    loc_set = []
+
     for token in tokenized_query:
         token_shard_num = build_index.get_token_shard_num(skip_tokens, token)
         token_shard_path = os.path.join(build_index.INDEX_PATH, f"token_shard{token_shard_num}.json")
@@ -52,9 +61,23 @@ def ranking(tokenized_query):
     accumulator = defaultdict(float)
     for posting in posting_list:
         (url, loc, tfidf_score, important_multiplier) = posting
+        
+        
         if url in common_url_list:
             final_score = calculate_final_score(tfidf_score, important_multiplier)
-            accumulator[url] = accumulator[url] + tfidf_score
+            """
+            check, score = check_loc(loc_set, loc)
+            if check:
+                loc_score = 1.2
+            else:
+                loc_score = 1
+            
+            loc_score *= 1.5
+            """
+
+            accumulator[url] = accumulator[url] + final_score
+        
+        loc_set.append(loc)
         
     sorted_accumulator = sorted(accumulator.items(), key=lambda x: x[1], reverse=True)
     return sorted_accumulator
